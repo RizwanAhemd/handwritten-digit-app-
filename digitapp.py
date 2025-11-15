@@ -4,7 +4,7 @@ import numpy as np
 from PIL import Image, ImageOps
 
 # Load your trained model
-model = tf.keras.models.load_model("D:\Machine learning\img_reco.h5")  # replace with your model file
+model = tf.keras.models.load_model("img_reco.h5")  # replace with your model file
 
 st.title("Handwritten Digit Recognition")
 st.write("Upload an image of a handwritten digit (0-9) to get the prediction.")
@@ -32,3 +32,4 @@ if uploaded_file is not None:
     predicted_digit = np.argmax(prediction)
     
     st.write(f"Predicted Digit: **{predicted_digit}**")
+
